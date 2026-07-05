@@ -1,0 +1,6 @@
+DMF|hello|1|0|hospital=104;ward=7;clock=88420
+DMF|dictionary|2|1|rev=202602;set=code=16385/name=norepi-alpha/class=high/route=1/conc=64000,code=16386/name=propofol-bedside/class=titrated/route=2/conc=120000;alias=16385
+DMF|order|3|1|order=9001;ward=7;bed=12;enc=777331;drug=16385;route=4096;rev=3;steps=0/4200/64000/100/9000,30/5200/64000/100/9500;note=pressor titration
+DMF|telemetry|4|0|pump=8193;channel=1;bat=11200;pressure=460;air=12;ticks=1400;lib=202603;alarm=2;metric=44;value=512
+DMF|journal|5|0|ops=tick=10/actor=501/action=2/subject=9001/body=verified/snapshot=1,tick=11/actor=502/action=3/subject=8193/body=pump-check
+DMF|script|6|0|push=4200;push=100;push=9000;clamp;drug=16385;win=12;add;halt

@@ -1,0 +1,25 @@
+[package]
+name = "dosemesh"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Offline hospital infusion-pump protocol decoder and medication safety ledger"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["infusion", "telemetry", "parser", "fuzzing"]
+categories = ["parser-implementations", "network-programming"]
+
+[dependencies]
+
+[lib]
+name = "dosemesh"
+path = "src/lib.rs"
+
+[profile.dev]
+overflow-checks = true
+
+[profile.release]
+opt-level = 3
+debug = true
+overflow-checks = true
+panic = "abort"

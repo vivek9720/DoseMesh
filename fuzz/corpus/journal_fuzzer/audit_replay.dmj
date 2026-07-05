@@ -1,0 +1,1 @@
+ops=tick=1/actor=100/action=2/subject=9001/body=order-created/snapshot=1,tick=2/actor=101/action=3/subject=9001/body=pharmacy-verified,tick=3/actor=102/action=4/subject=8193/body=pump-programmed,drop=1,tick=4/actor=103/action=2/subject=8193/body=alarm-reviewed/snapshot=1;compact=1;keep=3

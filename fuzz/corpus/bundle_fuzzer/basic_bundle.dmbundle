@@ -1,0 +1,10 @@
+--DMESH:manifest--
+name=library;version=202607;len=96;body=ward-seven-drug-library
+--DMESH:stream--
+DMF|dictionary|1|1|rev=202607;set=code=16388/name=heparin-floor/class=weight/route=8/conc=50000;alias=16388
+DMF|order|2|1|order=411;ward=2;bed=4;enc=9902;drug=16388;route=4098;rev=8;steps=0/1200/50000/100/3000,60/1500/50000/100/3200
+DMF|telemetry|3|0|pump=8200;channel=2;base=100;d=1,2,3,5,8,13,21,34,55;pressure=230;alarm=0
+--DMESH:journal--
+ops=tick=1/actor=12/action=2/subject=411/body=created/snapshot=1,tick=2/actor=13/action=4/subject=411/body=verified
+--DMESH:script--
+push=5;push=10;add;dup;win=8;clamp;halt
